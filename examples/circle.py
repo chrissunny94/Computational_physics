@@ -4,9 +4,9 @@ import math
 from rk import RK4
 
 xdot = lambda t, y, z: math.cos(t)
-print xdot
+print (xdot)
 ydot = lambda t, y, z: -y
-print ydot
+print (ydot)
 
 rk4 = RK4(xdot, ydot)
 t, y = rk4.solve([0, 1], .01, 2*math.pi)
